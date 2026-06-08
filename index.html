@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Visitenkarte</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial;
+      background: radial-gradient(circle at top, #1c1c1e, #000);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      width: 90%;
+      max-width: 380px;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(20px);
+      border-radius: 24px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+    }
+
+    .logo {
+      width: 90px;
+      height: 90px;
+      object-fit: contain;
+      border-radius: 18px;
+      margin-bottom: 15px;
+      background: white;
+      padding: 10px;
+    }
+
+    h1 {
+      font-size: 22px;
+      margin: 10px 0 5px;
+      font-weight: 600;
+    }
+
+    p {
+      margin: 0;
+      color: rgba(255,255,255,0.6);
+      font-size: 14px;
+    }
+
+    .btn {
+      display: block;
+      margin-top: 18px;
+      padding: 14px;
+      border-radius: 14px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      transition: 0.2s;
+    }
+
+    .primary {
+      background: #0a84ff;
+      color: white;
+    }
+
+    .primary:active {
+      transform: scale(0.98);
+    }
+
+    .secondary {
+      background: rgba(255,255,255,0.12);
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <!-- LOGO (Porsche Inter Auto) -->
+    <img class="logo" src="https://share.google/Ea96GO5kLsvGFo91F" alt="Logo">
+
+    <!-- NAME -->
+    <h1>Dominik Sailer</h1>
+    <p>Porsche Inter Auto</p>
+
+    <!-- VCF DOWNLOAD -->
+    <a class="btn primary"
+       href="https://raw.githubusercontent.com/dominik-sailer/Vcard/main/Dominik%20Sailer1.vcf">
+      📇 Kontakt speichern
+    </a>
+
+    <!-- OPTIONAL -->
+    <a class="btn secondary" href="mailto:">
+      ✉️ E-Mail
+    </a>
+
+    <a class="btn secondary" href="https://wa.me/">
+      💬 WhatsApp
+    </a>
+
+  </div>
+
+</body>
+</html>
